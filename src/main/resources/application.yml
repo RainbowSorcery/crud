@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: shop-application
+
+  datasource:
+    url: jdbc:mysql://192.168.223.130:3306/shop
+    username: root
+    password: 52701314
+    driver-class-name: com.mysql.cj.jdbc.Driver
+logging:
+  level:
+    org.springframework.web: DEBUG
+
