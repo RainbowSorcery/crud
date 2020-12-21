@@ -10,4 +10,7 @@ spring:
 logging:
   level:
     org.springframework.web: DEBUG
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
 

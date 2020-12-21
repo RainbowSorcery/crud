@@ -36,14 +36,14 @@ public class ProductController {
 
     @GetMapping("/findProductByid/{userId}")
     public Result<Product> findProductById(@PathVariable Integer userId) {
-        Product user = productService.findProductById(userId);
+        Product product = productService.findProductById(userId);
 
-        return new Result<>(StatusCode.ok, true,  user, "根据商品id查询商品成功.");
+        return new Result<>(StatusCode.ok, true,  product, "根据商品id查询商品成功.");
     }
 
     @PutMapping("/updateProduct")
-    public Result<Product> updateProduct(@RequestBody Product user) {
-        productService.updateProduct(user);
+    public Result<Product> updateProduct(@RequestBody Product product) {
+        productService.updateProduct(product);
 
         return new Result<>(StatusCode.ok, true, "商品更新成功.");
     }
